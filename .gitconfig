@@ -1,0 +1,29 @@
+[user]
+	name = shionit
+	email = frontier.engine@gmail.com
+[core]
+        editor = vim
+        excludesfile = ~/.gitignore
+        attributesfile = ~/.gitattributes
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+        branch = auto
+        diff = auto
+        grep = auto
+        interactive = auto
+        status = auto
+        ui = auto
+[alias]
+        amend = commit --amend -C HEAD
+        delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+        sync = !git checkout master && git pull origin master && git fetch -p origin && git delete-merged-branches
+        br = branch -vv
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
