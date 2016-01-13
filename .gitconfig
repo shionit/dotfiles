@@ -2,9 +2,9 @@
 	name = shionit
 	email = frontier.engine@gmail.com
 [core]
-        editor = vim
-        excludesfile = ~/.gitignore
-        attributesfile = ~/.gitattributes
+	editor = vim
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -12,17 +12,38 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [color]
-        branch = auto
-        diff = auto
-        grep = auto
-        interactive = auto
-        status = auto
-        ui = auto
+	branch = auto
+	diff = auto
+	grep = auto
+	interactive = auto
+	status = auto
+	ui = auto
 [alias]
-        amend = commit --amend -C HEAD
-        delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
-        sync = !git checkout master && git pull origin master && git fetch -p origin && git delete-merged-branches
-        br = branch -vv
+	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	today = log --oneline --since='18 hour ago'
+
+	# Show the diff between the latest commit and the current state
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+
+	# Commit all changes
+	ca = !git add -A && git commit -av
+
+	ci = commit -v
+
+	amend = "commit --amend -C HEAD"
+
+	# Remove branches that have already been merged with master
+	# a.k.a. ‘delete merged’
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
+
+	br = branch -vv
 [push]
 	default = simple
 [credential]
