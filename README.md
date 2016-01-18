@@ -17,28 +17,25 @@ $ sh ./install.sh
 ### by Download
 
 - Alfred
-- AppCleaner
+- AppCleaner(TODO:Brewfile)
 - Audacity
-- Automator
 - Battery Monitor
 - Blu-ray Player
 - ClipMenu
 - Cyberduck
-- Dash
-- DiffMerge
 - Disk Diag
 - Disk Inventory X
 - Docker
 - Dropbox
 - eclipse-Mars
 - Google Chrome Canary
-- Google Chrome
-- Google 日本語入力
+- Google Chrome (TODO:Brewfile)
+- Google 日本語入力(TODO:Brewfile)
 - GoogleAppEngineLauncher
 - Hoster
 - IntelliJ IDEA 14 CE
 - Kinoppy
-- Kobito
+- Kobito(TODO:Brewfile)
 - LibreOffice
 - LINE
 - MacVim
@@ -49,10 +46,10 @@ $ sh ./install.sh
 - PyCharm CE
 - Senebier
 - Sophos Anti-Virus
-- SourceTree
+- SourceTree(TODO:Brewfile)
 - Sublime Text
 - The Unarchiver
-- VirtualBox
+- VirtualBox(TODO:Brewfile)
 - Visual Studio Code
 - VLC
 - WinArchiver Lite

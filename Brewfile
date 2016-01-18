@@ -13,4 +13,6 @@ cask 'cheatsheet'
 cask 'gimp'
 cask 'skitch'
 cask 'xmind'
+cask 'dash'
+cask 'gitx'
 
