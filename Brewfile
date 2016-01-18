@@ -8,5 +8,9 @@ brew 'gradle'
 brew 'peco'
 brew 'gibo'
 
+cask 'iterm2'
 cask 'cheatsheet'
+cask 'gimp'
+cask 'skitch'
+cask 'xmind'
 

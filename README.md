@@ -47,9 +47,7 @@ $ sh ./install.sh
 - OWASP ZAP
 - Photos Duplicate Cleaner
 - PyCharm CE
-- Seashore
 - Senebier
-- Skitch
 - Sophos Anti-Virus
 - SourceTree
 - Sublime Text
@@ -60,4 +58,3 @@ $ sh ./install.sh
 - WinArchiver Lite
 - Wireshark
 - Wunderlist
-- XMind

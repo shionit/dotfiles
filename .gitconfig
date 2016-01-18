@@ -44,6 +44,8 @@
 	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
 
 	br = branch -vv
+	rhh = reset --hard HEAD^
+	s = status
 [push]
 	default = simple
 [credential]
