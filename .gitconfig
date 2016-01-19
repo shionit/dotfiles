@@ -54,6 +54,13 @@
 	s = status
 [push]
 	default = simple
+[pull]
+	rebase = true
+[grep]
+	lineNumbers = true
+[branch "master"]
+	mergeoptions = --no-ff
+	rebase = true
 [credential]
 	helper = osxkeychain
 [color "branch"]
