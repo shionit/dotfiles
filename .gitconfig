@@ -43,7 +43,13 @@
 
 	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
 
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
 	br = branch -vv
+	lg = log --graph --pretty='format:%C(yellow)%h%C(blue)%d%C(reset) %s %C(cyan)%an, %ar%C(reset)'
 	rhh = reset --hard HEAD^
 	s = status
 [push]
