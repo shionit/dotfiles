@@ -13,9 +13,19 @@
 	status = auto
 	ui = auto
 [alias]
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
+	amend = "commit --amend -C HEAD"
+	br = branch -vv
+	ci = commit -v
+	co = checkout
+	f = fetch --prune
+	info = remote show origin
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
-
+	lg = log --graph -n 20 --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+	ll = log --stat --abbrev-commit
+	ln = log --graph -n 20 --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset' --name-status
+	rhh = reset --hard HEAD^
+	s = status -sb
+	st = status
 	today = log --oneline --since='18 hour ago'
 
 	# Show the diff between the latest commit and the current state
@@ -27,10 +37,6 @@
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
-	ci = commit -v
-
-	amend = "commit --amend -C HEAD"
-
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
@@ -41,15 +47,13 @@
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -v
-
-	br = branch -vv
-	lg = log --graph --pretty='format:%C(yellow)%h%C(blue)%d%C(reset) %s %C(cyan)%an, %ar%C(reset)'
-	rhh = reset --hard HEAD^
-	s = status
 [push]
-	default = simple
+	# push only the current branch
+	default = current
 [pull]
-	rebase = true
+	ff = only
+[merge]
+	ff = false
 [grep]
 	lineNumbers = true
 [branch "master"]
