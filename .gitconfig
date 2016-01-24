@@ -5,6 +5,8 @@
 	editor = vim
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+[include]
+	path = ~/.gitconfig.local
 [color]
 	branch = auto
 	diff = auto
@@ -59,8 +61,6 @@
 [branch "master"]
 	mergeoptions = --no-ff
 	rebase = true
-[credential]
-	helper = osxkeychain
 [color "branch"]
 	current = yellow reverse
 	local = yellow
