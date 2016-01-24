@@ -7,6 +7,7 @@ brew 'lv'
 brew 'openssl'
 brew 'peco'
 brew 'tree'
+brew 'mackup'
 
 cask 'appcleaner'
 cask 'cheatsheet'

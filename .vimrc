@@ -178,4 +178,8 @@
  
  
  "------------------------------------------------------------
- 
+
+ set undodir=/tmp/vim/undo
+
+ set backupskip=/private/tmp/crontab.*
+
