@@ -15,16 +15,19 @@
 	status = auto
 	ui = auto
 [alias]
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 	amend = "commit --amend -C HEAD"
 	br = branch -vv
 	ci = commit -v
 	co = checkout
+	cot = !"c() { git checkout -b $1 --track origin/$1; }; c"
 	f = fetch --prune
 	info = remote show origin
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	lg = log --graph -n 20 --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
 	ll = log --stat --abbrev-commit
 	ln = log --graph -n 20 --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset' --name-status
+	rh = reset --hard HEAD
 	rhh = reset --hard HEAD^
 	s = status -sb
 	st = status
