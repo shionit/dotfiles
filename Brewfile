@@ -16,5 +16,6 @@ cask 'flux'
 cask 'gimp'
 cask 'gitx'
 cask 'iterm2'
+cask 'virtualbox'
 cask 'xmind'
 

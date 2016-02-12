@@ -15,4 +15,12 @@ Thumbs.db
 
 # vi undo files
 .*.un~
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
 

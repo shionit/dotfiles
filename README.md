@@ -48,6 +48,5 @@ $ sh ./install.sh
 - Sophos Anti-Virus
 - SourceTree(TODO:Brewfile)
 - Sublime Text
-- VirtualBox(TODO:Brewfile)
 - Visual Studio Code
 - Wireshark
