@@ -11,7 +11,6 @@ brew 'mackup'
 
 cask 'appcleaner'
 cask 'cheatsheet'
-cask 'dockertoolbox'
 cask 'flux'
 cask 'gimp'
 cask 'gitx'
