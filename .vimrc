@@ -183,3 +183,5 @@
 
  set backupskip=/private/tmp/crontab.*
 
+ set backupdir=/tmp
+
