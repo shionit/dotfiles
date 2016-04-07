@@ -10,6 +10,7 @@ brew 'tree'
 brew 'mackup'
 
 cask 'appcleaner'
+cask 'brave'
 cask 'cheatsheet'
 cask 'dockertoolbox'
 cask 'flux'
