@@ -15,7 +15,7 @@
 	status = auto
 	ui = auto
 [alias]
-	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\=> \\2/' | sort
 	amend = "commit --amend -C HEAD"
 	br = branch -vv
 	ci = commit -v
@@ -47,6 +47,9 @@
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
+
+	#Checkout pull request merged commit
+	copr = !"c() { git fetch origin refs/pull/$1/merge -f && git checkout -b $1-merged pull/$1/merge; }; c"
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
