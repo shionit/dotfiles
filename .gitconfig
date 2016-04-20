@@ -50,6 +50,8 @@
 
 	#Checkout pull request merged commit
 	copr = !"c() { git fetch origin +refs/pull/$1/merge:refs/remotes/pull/$1/merge -f && git checkout -b $1-merged pull/$1/merge; }; c"
+	# Delete merged (pull request) branches
+	dmp = !git branch | grep merged | xargs git branch -D
 
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
