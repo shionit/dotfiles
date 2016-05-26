@@ -44,7 +44,7 @@
 
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	dm = "!git branch --merged | grep -v '\\*' | grep -v master | xargs -n 1 git branch -d"
 
 	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
 
