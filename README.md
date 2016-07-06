@@ -11,7 +11,6 @@ My setup kits on MacOSX.
 - Disk Diag
 - Kinoppy
 - Kobito
-- LINE
 - Monosnap
 - Photos Duplicate Cleaner
 - Skitch
