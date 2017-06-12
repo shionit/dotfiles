@@ -9,5 +9,5 @@ for file in ~/.{path,exports,aliases,extra}; do
 done;
 unset file;
 
-
+eval "$(ssh-agent -s)"
 
