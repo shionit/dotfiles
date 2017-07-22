@@ -8,6 +8,7 @@ brew 'openssl'
 brew 'peco'
 brew 'tree'
 brew 'mackup'
+brew 'pyenv'
 
 cask 'appcleaner'
 cask 'atom'
