@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 
 brew 'gibo'
+brew 'git'
 brew 'gradle'
 brew 'hub'
 brew 'lv'
