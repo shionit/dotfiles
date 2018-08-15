@@ -3,6 +3,7 @@ tap 'caskroom/cask'
 
 brew 'gibo'
 brew 'gradle'
+brew 'hub'
 brew 'lv'
 brew 'openssl'
 brew 'peco'
