@@ -53,6 +53,9 @@
 	# Delete merged (pull request) branches
 	dmp = !git branch | grep merged | xargs git branch -D
 
+	# Delete unstaged files
+	duf = "!git status --short | grep '??' | awk '{print $2}' | xargs rm -rf"
+
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
