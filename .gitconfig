@@ -5,6 +5,7 @@
 	editor = vim
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	quotepath = false
 [include]
 	path = ~/.gitconfig.local
 [color]
