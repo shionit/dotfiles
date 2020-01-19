@@ -1,5 +1,5 @@
+tap 'homebrew/cask'
 cask_args appdir: '/Applications'
-tap 'homebrew/cask-cask'
 
 brew 'gibo'
 brew 'git'
