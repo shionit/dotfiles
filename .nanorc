@@ -1,0 +1,79 @@
+# Settings
+set autoindent
+set constantshow
+set linenumbers
+set mouse
+set tabsize 4
+
+
+# syntax highlight
+include "~/.nano/apacheconf.nanorc"
+include "~/.nano/asciidoc.nanorc"
+include "~/.nano/asm.nanorc"
+include "~/.nano/awk.nanorc"
+include "~/.nano/c.nanorc"
+include "~/.nano/clojure.nanorc"
+include "~/.nano/cmake.nanorc"
+include "~/.nano/colortest.nanorc"
+include "~/.nano/conf.nanorc"
+include "~/.nano/csharp.nanorc"
+include "~/.nano/css.nanorc"
+include "~/.nano/dot.nanorc"
+include "~/.nano/dotenv.nanorc"
+include "~/.nano/email.nanorc"
+include "~/.nano/Dockerfile.nanorc"
+include "~/.nano/etc-hosts.nanorc"
+include "~/.nano/fish.nanorc"
+include "~/.nano/git.nanorc"
+include "~/.nano/gitcommit.nanorc"
+include "~/.nano/go.nanorc"
+include "~/.nano/gradle.nanorc"
+include "~/.nano/html.nanorc"
+include "~/.nano/html.j2.nanorc"
+include "~/.nano/ical.nanorc"
+include "~/.nano/ini.nanorc"
+include "~/.nano/inputrc.nanorc"
+include "~/.nano/jade.nanorc"
+include "~/.nano/java.nanorc"
+include "~/.nano/javascript.nanorc"
+include "~/.nano/js.nanorc"
+include "~/.nano/json.nanorc"
+include "~/.nano/keymap.nanorc"
+include "~/.nano/kotlin.nanorc"
+include "~/.nano/makefile.nanorc"
+include "~/.nano/man.nanorc"
+include "~/.nano/markdown.nanorc"
+include "~/.nano/nanorc.nanorc"
+include "~/.nano/nginx.nanorc"
+include "~/.nano/nmap.nanorc"
+include "~/.nano/patch.nanorc"
+include "~/.nano/php.nanorc"
+include "~/.nano/pkg-config.nanorc"
+include "~/.nano/pkgbuild.nanorc"
+include "~/.nano/puppet.nanorc"
+include "~/.nano/pug.nanorc"
+include "~/.nano/python.nanorc"
+include "~/.nano/reST.nanorc"
+include "~/.nano/ruby.nanorc"
+include "~/.nano/rust.nanorc"
+include "~/.nano/scala.nanorc"
+include "~/.nano/sed.nanorc"
+include "~/.nano/sh.nanorc"
+include "~/.nano/sql.nanorc"
+include "~/.nano/svn.nanorc"
+include "~/.nano/swift.nanorc"
+include "~/.nano/systemd.nanorc"
+include "~/.nano/vi.nanorc"
+include "~/.nano/xml.nanorc"
+include "~/.nano/yaml.nanorc"
+include "~/.nano/yum.nanorc"
+include "~/.nano/zsh.nanorc"
+
+# Color
+set titlecolor white,red
+#set numbercolor white,blue
+set selectedcolor white,green
+set statuscolor white,green
+#set keycolor white,green
+#set functioncolor white,green
+

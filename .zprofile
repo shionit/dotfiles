@@ -21,3 +21,6 @@ eval "$(pyenv init -)"
 # nodebrew path
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
+# Flutter path
+export PATH="$PATH:$HOME/programs/flutter/bin"
+
