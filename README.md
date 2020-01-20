@@ -19,19 +19,17 @@ $ sh ./install.sh
 - Cyberduck
 - Dash
 - Disk Inventory X
-- Dropbox
+- Dropbox (TODO:Brewfile)
 - Eclipse
 - Google Chrome (TODO:Brewfile)
 - Google 日本語入力(TODO:Brewfile)
-- Hoster
-- IntelliJ IDEA 14 CE
+- IntelliJ IDEA
 - LibreOffice
 - MacVim
 - mi
 - OWASP ZAP
 - PyCharm CE
-- Sophos Anti-Virus
-- SourceTree(TODO:Brewfile)
+- AVG AntiVirus
 - Sublime Text
 - Visual Studio Code
 - Wireshark
