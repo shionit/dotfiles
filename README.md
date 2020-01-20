@@ -2,22 +2,6 @@
 My setup kits on MacOSX.
 
 
-### by App Store
-
-- 1Password
-- Alfred
-- Battery Monitor
-- Dash
-- Disk Diag
-- Kinoppy
-- Kobito
-- Monosnap
-- Photos Duplicate Cleaner
-- Skitch
-- The Unarchiver
-- WinArchiver Lite
-- Wunderlist
-
 ### by Homebrew
 
 ```shell
@@ -29,9 +13,11 @@ $ sh ./install.sh
 ### by Download
 
 - Audacity
+- Alfred
 - Blu-ray Player
 - ClipMenu
 - Cyberduck
+- Dash
 - Disk Inventory X
 - Dropbox
 - Eclipse
