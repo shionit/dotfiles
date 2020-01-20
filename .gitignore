@@ -24,3 +24,5 @@ Session.vim
 .netrwhist
 *~
 
+# Brewfile
+Brewfile.lock.json
