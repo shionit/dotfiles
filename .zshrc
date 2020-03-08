@@ -101,14 +101,18 @@ alias mkdir='mkdir -p'
 
 # Easier navigation: .., ..., ...., .....
 alias ..="cd .."
-alias ...="cd ../.."
 
 # sudo の後のコマンドでエイリアスを有効にする
 alias sudo='sudo '
 
 # グローバルエイリアス
+alias -g ...="cd ../.."
+alias -g C='| wc -l'
+alias -g G='| egrep'
 alias -g L='| less'
-alias -g G='| grep'
+alias -g S='| sort'
+alias -g T='| tail'
+alias -g X='| xargs'
 
 
 ########################################
