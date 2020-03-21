@@ -40,7 +40,7 @@ mas "Monosnap", id: 540348655
 mas "Skitch", id: 425955336
 mas "The Unarchiver", id: 425424353
 mas "GIPHY CAPTURE", id: 668208984
-mas "Wunderlist", id: 410628904
+mas "Microsoft To Do", id: 1274495053
 mas "Battery Monitor", id: 836505650
 mas "Photos Duplicate Cleaner", id: 592704001
 mas "Disk Diag", id: 672206759
