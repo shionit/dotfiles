@@ -1,6 +1,9 @@
 tap 'homebrew/cask'
 cask_args appdir: '/Applications'
 
+brew 'bat'
+brew 'exa'
+brew 'fd'
 brew 'gibo'
 brew 'git'
 brew 'git-secrets'
