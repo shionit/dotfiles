@@ -42,4 +42,6 @@ if ask 'setup finder?'; then
   killall Finder
 fi
 
-
+if ask 'setup Mission Control?'; then
+  defaults write com.apple.dock mru-spaces -bool false
+fi
