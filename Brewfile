@@ -42,7 +42,6 @@ mas "Disk Diag", id: 672206759
 mas "Evernote", id: 406056744
 mas "GIPHY CAPTURE", id: 668208984
 mas "Kobito", id: 896624060
-mas "Microsoft To Do", id: 1274495053
 mas "Monosnap", id: 540348655
 mas "Photos Duplicate Cleaner", id: 592704001
 mas "Skitch", id: 425955336

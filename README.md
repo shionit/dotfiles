@@ -13,23 +13,21 @@ $ sh ./install.sh
 ### by Download
 
 - Audacity
-- Alfred
+- Alfred(Registered)
 - Blu-ray Player
-- ClipMenu
-- Cyberduck
 - Dash
 - Disk Inventory X
 - Dropbox (TODO:Brewfile)
 - Eclipse
 - Google Chrome (TODO:Brewfile)
 - Google 日本語入力(TODO:Brewfile)
-- IntelliJ IDEA
+- Toolbox App
+  - IntelliJ IDEA(Registered)
+  - PyCharm CE
 - LibreOffice
 - MacVim
 - mi
 - OWASP ZAP
-- PyCharm CE
 - AVG AntiVirus
-- Sublime Text
 - Visual Studio Code
 - Wireshark
