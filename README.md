@@ -25,8 +25,6 @@ $ sh ./install.sh
   - IntelliJ IDEA(Registered)
   - PyCharm CE
 - LibreOffice
-- MacVim
-- mi
 - OWASP ZAP
 - AVG AntiVirus
 - Visual Studio Code
