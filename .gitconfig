@@ -15,6 +15,8 @@
 	interactive = auto
 	status = auto
 	ui = auto
+[init]
+	defaultBranch = main
 [alias]
 	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\=> \\2/' | sort
 	amend = "commit --amend -C HEAD"
@@ -43,11 +45,11 @@
 	# Commit all changes
 	ca = !git add -A && git commit -av
 
-	# Remove branches that have already been merged with master
+	# Remove branches that have already been merged with main
 	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | grep -v master | xargs -n 1 git branch -d"
+	dm = "!git branch --merged | grep -v '\\*' | grep -v main | xargs -n 1 git branch -d"
 
-	sync = !git checkout master && git pull origin master && git fetch -p origin && git dm
+	sync = !git checkout main && git pull origin main && git fetch -p origin && git dm
 
 	#Checkout pull request merged commit
 	copr = !"c() { git fetch origin +refs/pull/$1/merge:refs/remotes/pull/$1/merge -f && git checkout -b $1-merged pull/$1/merge; }; c"
@@ -71,6 +73,9 @@
 [grep]
 	lineNumbers = true
 [branch "master"]
+	mergeoptions = --no-ff
+	rebase = true
+[branch "main"]
 	mergeoptions = --no-ff
 	rebase = true
 [color "branch"]
