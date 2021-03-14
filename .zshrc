@@ -116,5 +116,5 @@ esac
 
 # aws cli
 
-source $HOME/.local/bin/aws_zsh_completer.sh
-
+autoload bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
