@@ -28,6 +28,7 @@ brew "zsh-syntax-highlighting"
 
 cask "appcleaner"
 cask "cheatsheet"
+cask "deepl"
 cask "fork"
 cask "gimp"
 cask "iterm2"
