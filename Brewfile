@@ -39,6 +39,7 @@ cask "xmind"
 mas "1Password", id: 443987910
 mas "Battery Monitor", id: 836505650
 mas "Disk Diag", id: 672206759
+mas "Display Menu", id: 549083868
 mas "Evernote", id: 406056744
 mas "GIPHY CAPTURE", id: 668208984
 mas "Kobito", id: 896624060
