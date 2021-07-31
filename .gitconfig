@@ -6,6 +6,7 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 	quotepath = false
+	autocrlf = input
 [include]
 	path = ~/.gitconfig.local
 [color]
@@ -35,6 +36,7 @@
 	s = status -sb
 	st = status
 	today = log --oneline --since='18 hour ago'
+	unstage = reset HEAD
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
@@ -91,3 +93,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[http]
+	postbuffer = 4M
