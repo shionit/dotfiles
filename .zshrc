@@ -1,5 +1,12 @@
 ########################################
 # 環境変数
+typeset -U path PATH
+path=(
+    /opt/homebrew/bin(N-/)
+    /usr/local/bin(N-/)
+    $path
+)
+
 export LANG=ja_JP.UTF-8
 
 # 色を使用出来るようにする

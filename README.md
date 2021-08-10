@@ -17,10 +17,12 @@ $ sh ./install.sh
 - Blu-ray Player
 - Dash
 - Disk Inventory X
+- Docker
 - Dropbox (TODO:Brewfile)
 - Eclipse
 - Google Chrome (TODO:Brewfile)
 - Google 日本語入力(TODO:Brewfile)
+- HyperSwitch
 - Toolbox App
   - IntelliJ IDEA(Registered)
   - PyCharm CE

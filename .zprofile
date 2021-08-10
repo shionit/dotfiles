@@ -17,9 +17,9 @@ eval "$(ssh-agent -s)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Python version management: pyenv.
-PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # nodebrew path
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
