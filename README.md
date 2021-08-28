@@ -14,20 +14,21 @@ $ sh ./install.sh
 
 - Audacity
 - Alfred(Registered)
+- AVG AntiVirus
 - Blu-ray Player
 - Dash
 - Disk Inventory X
 - Docker
-- Dropbox (TODO:Brewfile)
+- Dropbox
 - Eclipse
-- Google Chrome (TODO:Brewfile)
-- Google 日本語入力(TODO:Brewfile)
+- Google Chrome
+- Google 日本語入力
 - HyperSwitch
 - Toolbox App
   - IntelliJ IDEA(Registered)
   - PyCharm CE
 - LibreOffice
 - OWASP ZAP
-- AVG AntiVirus
+- Scroll Reverser
 - Visual Studio Code
 - Wireshark
