@@ -11,7 +11,12 @@ for file in ~/.{exports,extra}; do
 done;
 unset file;
 
-eval "$(ssh-agent -s)"
+# Start ssh-agent if it isn’t running yet:
+if ps -ef | grep ssh-agent | grep -v grep > /dev/null
+then
+else
+  eval "$(ssh-agent -s)"
+fi
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
