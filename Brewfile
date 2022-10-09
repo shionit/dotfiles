@@ -33,6 +33,7 @@ cask "fork"
 cask "gimp"
 cask "iterm2"
 cask "marp"
+cask "marta"
 cask "slack"
 cask "xmind"
 
