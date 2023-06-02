@@ -129,7 +129,8 @@ esac
 
 # aws cli
 
-autoload bashcompinit && bashcompinit
+autoload -U +X bashcompinit && bashcompinit
+autoload -U +X compinit && compinit
 complete -C '/usr/local/bin/aws_completer' aws
 
 # golang - goenv
