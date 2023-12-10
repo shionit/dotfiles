@@ -141,3 +141,8 @@ export GOENV_DISABLE_GOPATH=1
 eval "$(goenv init -)"
 export GOPATH=$HOME/go
 export PATH="$PATH:$GOPATH/bin"
+
+# kubernetes
+source <(kubectl completion zsh)
+alias k=kubectl
+complete -o default -F __start_kubectl k
