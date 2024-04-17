@@ -81,9 +81,9 @@ setopt hist_reduce_blanks  # ヒストリに保存するときに余分なスペ
 ########################################
 # Aliases
 
-alias ls='exa'
-alias ll='exa -hl --git'
-alias la='exa -ahl --git'
+alias ls='eza'
+alias ll='eza -hl --git'
+alias la='eza -ahl --git'
 
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
