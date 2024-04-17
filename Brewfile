@@ -2,7 +2,7 @@ tap "homebrew/cask"
 cask_args appdir: "/Applications"
 
 brew "bat"
-brew "exa"
+brew "eza"
 brew "fd"
 brew "gibo"
 brew "git"
