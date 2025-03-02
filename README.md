@@ -12,15 +12,12 @@ $ sh ./install.sh
 
 ### by Download
 
+- 1Password
 - Audacity
 - Alfred(Registered)
-- AVG AntiVirus
-- Blu-ray Player
 - Dash
-- Disk Inventory X
 - Docker
 - Dropbox
-- Eclipse
 - Google Chrome
 - Google 日本語入力
 - HyperSwitch

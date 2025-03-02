@@ -1,4 +1,3 @@
-tap "homebrew/cask"
 cask_args appdir: "/Applications"
 
 brew "bat"
@@ -34,10 +33,11 @@ cask "gimp"
 cask "iterm2"
 cask "marp"
 cask "marta"
+cask "raycast"
 cask "slack"
 cask "xmind"
+cask "zed"
 
-mas "1Password", id: 443987910
 mas "Battery Monitor", id: 836505650
 mas "Disk Diag", id: 672206759
 mas "Display Menu", id: 549083868
@@ -49,4 +49,3 @@ mas "Photos Duplicate Cleaner", id: 592704001
 mas "Skitch", id: 425955336
 mas "The Unarchiver", id: 425424353
 mas "WinArchiver Lite", id: 414855915
-
