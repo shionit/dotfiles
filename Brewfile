@@ -30,18 +30,13 @@ cask "appcleaner"
 cask "cheatsheet"
 cask "fork"
 cask "gimp"
-cask "iterm2"
-cask "marp"
 cask "marta"
 cask "raycast"
 cask "slack"
-cask "xmind"
-cask "zed"
 
 mas "Battery Monitor", id: 836505650
 mas "Disk Diag", id: 672206759
 mas "Display Menu", id: 549083868
-mas "Evernote", id: 406056744
 mas "GIPHY CAPTURE", id: 668208984
 mas "Kobito", id: 896624060
 mas "Monosnap", id: 540348655
