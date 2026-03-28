@@ -14,7 +14,6 @@ $ sh ./install.sh
 
 - 1Password
 - (any AI Browser like ChatGPT Atlas)
-- Alfred(Registered)
 - Cursor
 - Dash
 - Docker
@@ -23,9 +22,6 @@ $ sh ./install.sh
 - Google Chrome
 - Google 日本語入力
 - HyperSwitch
-- LibreOffice
-- OWASP ZAP
 - Scroll Reverser
 - Visual Studio Code
 - Warp
-- Wireshark
