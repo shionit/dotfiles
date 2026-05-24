@@ -26,3 +26,16 @@ Session.vim
 
 # Brewfile
 Brewfile.lock.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+
+# Log files
+*.log
+
+# Local setting files
+settings.local.json
