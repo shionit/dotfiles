@@ -19,7 +19,6 @@ $ sh ./install.sh
 - Dropbox
 - Google Chrome
 - Google 日本語入力
-- HyperSwitch
-- Scroll Reverser
+- AltTab
 - Visual Studio Code
 - Zed
