@@ -1,5 +1,5 @@
 #!/bin/bash
-BREWFILE_DIR=.
+BREWFILE_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 ask() {
   printf "$* [y/n] "
@@ -16,23 +16,30 @@ ask() {
 set -e
 
 if ask 'xcode install?'; then
-  xcode-select --install
+  if xcode-select -p >/dev/null 2>&1; then
+    echo "Xcode Command Line Tools are already installed."
+  else
+    xcode-select --install
+  fi
 fi
 
 if ask 'Homebrew install?'; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  if command -v brew >/dev/null 2>&1; then
+    echo "Homebrew is already installed."
+  else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  fi
+fi
 
-  brew doctor
-  brew install caskroom/cask/brew-cask
+# Make brew available in this shell (Apple Silicon: /opt/homebrew, Intel: /usr/local)
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [ -x /usr/local/bin/brew ]; then
+  eval "$(/usr/local/bin/brew shellenv)"
 fi
 
 if ask 'execute brew bundle(Brewfile)?'; then
-  brew tap Homebrew/bundle
-  pushd $BREWFILE_DIR
-  brew bundle
-  popd
-
-  brew link openssl --force
+  brew bundle --file="$BREWFILE_DIR/Brewfile"
 fi
 
 if ask 'setup finder?'; then
